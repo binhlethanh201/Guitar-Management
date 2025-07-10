@@ -1,61 +1,59 @@
-# Getting Started with Java Project
+# JAVA Project
 
-This project was bootstrapped with Java.
+This project is an Object-Oriented Guitar Manager implemented in Java. It demonstrates the use of object-oriented programming principles to manage guitar objects and provides a simple interface for interacting with guitar data. The system is designed for educational purposes, showcasing Java classes, encapsulation, and basic object manipulation.
 
-## Available Commands
+## Prerequisites
 
-In the project directory, you can run:
+- Java Development Kit (JDK) 8 or higher
+- (Optional) An IDE like IntelliJ IDEA, Eclipse, NetBeans, or VS Code for easier code navigation
 
-### `mvn clean install`
+## Installation
 
-Builds the project and installs the package into the local repository.\
-This command compiles the code, runs tests, and packages the application.
+1. **Clone the repository** (if not already downloaded):
+   ```sh
+   git clone <repository-url>
+   cd Guitar-Management-main
+   ```
+2. **Compile the source code:**
+   Use the following command from the project root to compile all Java files:
+   ```sh
+   javac -d out src/GUI/*.java
+   ```
+   This will compile the Java files and place the `.class` files in the `out` directory.
 
-### `mvn spring-boot:run`
+   Alternatively, if you use NetBeans, you can build the project using the provided `build.xml` (Ant build script).
 
-Runs the application in the development mode.\
-Open [http://localhost:8080](http://localhost:8080) to view it in your browser.
+## How to Run
 
-The application will reload when you make changes.\
-You may also see any errors in the console.
+After compiling, run the main class to start the Guitar Manager application. For example:
 
-### `mvn test`
+```sh
+java -cp out GUI.Tester
+```
 
-Launches the test runner.\
-This command runs all the tests in the project.
+Or, if you use NetBeans, simply run the project from the IDE.
 
-### `mvn package`
+## Project Structure
 
-Packages the application into a JAR file.\
-The JAR file will be created in the `target` directory.
+```
+Guitar-Management-main/
+├── src/
+│   └── GUI/
+│       ├── Guitar.java     # Guitar entity class
+│       └── Tester.java    # Main entry point and demo logic
+├── lib/                   # Libraries (if any)
+├── build.xml              # Ant build script (for NetBeans)
+├── manifest.mf            # Manifest file
+├── README.md              # Project documentation
+└── ... (other project and build files)
+```
 
-### `mvn clean`
-
-Cleans the project by deleting the `target` directory.\
-This command is useful for ensuring a fresh build.
+- The `GUI` package contains the main Java source files for the Guitar Manager application.
+- The `lib` directory may contain additional libraries required for the project.
+- The `build.xml` file is used for building the project with Apache Ant (commonly used in NetBeans projects).
 
 ## Learn More
 
-You can learn more in the [Maven documentation](https://maven.apache.org/guides/index.html).
-
-To learn Spring Boot, check out the [Spring Boot documentation](https://spring.io/projects/spring-boot).
-
-### Dependency Management
-
-This section has moved here: [Maven Dependency Management](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html)
-
-### Building an Executable JAR
-
-This section has moved here: [Spring Boot Executable JAR](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-executable-jar.html)
-
-### Advanced Configuration
-
-This section has moved here: [Maven Advanced Configuration](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html)
-
-### Deployment
-
-This section has moved here: [Spring Boot Deployment](https://spring.io/guides/gs/spring-boot/)
-
-### Troubleshooting
-
-This section has moved here: [Maven Troubleshooting](https://maven.apache.org/guides/introduction/introduction-to-troubleshooting.html)
+- [Java Documentation](https://docs.oracle.com/javase/tutorial/)
+- [How to Compile and Run Java](https://www.oracle.com/java/technologies/javase/codeconventions-137265.html)
+- For questions or contributions, please open an issue or pull request.
